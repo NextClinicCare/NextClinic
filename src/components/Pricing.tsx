@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { Check } from 'lucide-react'
 
+const CALENDLY_URL = 'https://calendly.com/hello-nextclinic'
+
 const plans = [
   {
     name: 'Setup',
@@ -85,7 +87,9 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="mailto:sotiris@nextclinic.care?subject=NextClinic%20-%20Getting%20Started"
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`mt-9 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all ${
                   p.highlight
                     ? 'bg-offwhite text-navy hover:bg-offwhite-2'

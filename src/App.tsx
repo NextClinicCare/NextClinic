@@ -12,7 +12,6 @@ import type { LucideIcon } from 'lucide-react'
 
 const LOGO_URL = '/logo-full.png'
 const CALENDLY_URL = 'https://calendly.com/hello-nextclinic'
-const EMAIL_URL = 'mailto:sotiris@nextclinic.care?subject=NextClinic%20-%20Getting%20Started'
 
 /* ===================== PULSE BADGE ===================== */
 function PulseBadge({ icon: Icon, size = 26 }: { icon: LucideIcon; size?: number }) {
@@ -377,7 +376,7 @@ function Pricing() {
                   </li>
                 ))}
               </ul>
-              <a href={EMAIL_URL}
+              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer"
                 className={`mt-9 inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all ${
                   p.highlight ? 'bg-offwhite text-navy hover:bg-offwhite-2' : 'border border-navy/15 text-navy hover:border-navy hover:bg-navy hover:text-offwhite'
                 }`}>
